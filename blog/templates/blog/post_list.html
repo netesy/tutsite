@@ -14,14 +14,13 @@
 	<article>
 </article>
 <section>
+  {% for post in posts %}
 <div>
-<p>published: 14.06.2014, 12:14</p>
-<h2><a href="">My first post</a></h2>
-<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id </div>
-<div>
-<p>published: 14.06.2014, 12:14</p>
-<h2><a href="">My second post</a></h2>
-<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id </div>
+<h2><a href="">{{ post.title }}</a></h2>
+<p>published: {{ post.published_date }}</p>
+<p>{{ post.text|linebreaks }}</p>
+ </div
+ {% endfor %}
 </section>
 <br/>
 <br/>
@@ -34,7 +33,7 @@
 	Part of <em> Majixx: php, css3, html5, Web, Mobile&rsquo;s Next Big Thing</em>
 	</li>
 	<li>
-	<a href="http://Majix.ml">MajixxCorp</a> | 
+	<a href="http://Majix.ml">MajixxCorp</a> |
 	<a href="http://netesy.ml">Netesy</a>
 	</li>
 </ul>
