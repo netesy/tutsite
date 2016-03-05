@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title> CrocBucket</title>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster&subset=latin">
+</head>
+<body>
+<header>
+<h1 class="container">CrocBucket</h1>
+<p class="tagline">
+   Share Your Memories.
+</p><!-----/.tagline------->
+</header>
+
+  {% block content %}
+
+  {% endblock %}
+
+<footer>
+<ul>
+	<li class="copyright">
+	&copy; 2016 Majixx
+	</li><!---/.copyright--->
+	<li>
+	Part of <em> Majixx: Python, css3, html5, Web, Mobile&rsquo;s Next Big Thing</em>
+	</li>
+	<li>
+	<a href="http://Majix.ml">MajixxCorp</a> |
+	<a href="http://netesy.ml">Netesy</a>
+	</li>
+</ul>
+</footer>
+<!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
